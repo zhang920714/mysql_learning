@@ -13,8 +13,12 @@ create table if not exists students
 
 show tables;
 
-insert into students values(NULL, "huh", "male", 20, "13811371377");
+#insert into students values(NULL, "huh", "male", 20, "13811371377","shanghai");
 select * from students where sex="male";
-delete from students where id=2;
-show tables;
-select * from students where sex="male";#
+delete from students where id<10;
+#alter table students drop age;
+#update students set address="beijing" where id=22;
+select * from students where sex="male";
+drop table students;#
+##show tables;
+#drop database test;
