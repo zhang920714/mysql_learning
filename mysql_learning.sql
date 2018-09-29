@@ -1,24 +1,47 @@
-show databases;
-create database if not exists test DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+/*
 show databases;
 use test;
-create table if not exists students
-	(
-		id int unsigned not null auto_increment primary key,
-        name char(8) not null,
-        sex char(4) not null,
-        age tinyint unsigned not null,
-        tel char(13) null default "-"
-        );
-
 show tables;
+drop table creditcard;
+create table if not exists creditcard
+(
+	time int unsigned not null,
+	V1 double not null,
+	V2 double not null,
+    V3 double not null,
+    V4 double not null,
+    V5 double not null,
+    V6 double not null,
+    V7 double not null,
+    V8 double not null,
+    V9 double not null,
+    V10 double not null,
+    V11 double not null,
+    V12 double not null,
+    V13 double not null,
+    V14 double not null,
+    V15 double not null,
+    V16 double not null,
+    V17 double not null,
+    V18 double not null,
+    V19 double not null,
+    V20 double not null,
+    V21 double not null,
+    V22 double not null,
+    V23 double not null,
+    V24 double not null,
+    V25 double not null,
+    V26 double not null,
+    V27 double not null,
+    V28 double not null,
+    Amount double not null,
+    Class bigint not null
+    );
 
-#insert into students values(NULL, "huh", "male", 20, "13811371377","shanghai");
-select * from students where sex="male";
-delete from students where id<10;
-#alter table students drop age;
-#update students set address="beijing" where id=22;
-select * from students where sex="male";
-drop table students;#
-##show tables;
-#drop database test;
+*/
+
+/*
+LOAD DATA INFILE '/Users/zhangzhibang/lib_of_github/mysql_learning/creditcard.csv'  INTO TABLE creditcard FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;        
+*/
+
+select * from creditcard where time=2;
